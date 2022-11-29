@@ -1,0 +1,22 @@
+<script>
+    //Problema: Lanche do Intervalo
+    /*
+    Considere que, no intervalo, uma parte dos alunos da turma 1INFO1 vai até a cantina para pegar bolachas para comer.
+    O programa deverá perguntar quantos alunos estiveram no refeitório buscando as bolachas. Para cada aluno que esteve no refeitório, o programa deverá perguntar quantas bolachas que o aluno pegou.
+    No final do programa, apresente o total de bolachas que foram consumidas. O programa deverá também apresentar a média de bolachas consumidas pelos alunos.
+    */
+
+    //Entrada
+    const quant = Number(prompt("Quantos alunos foram no refeitório para comer bolacha ?"));
+    let bolachas = [];
+    let soma = 0;
+    //Processamento
+    for (let contador = 1; contador <= quant ; contador ++){
+    const BolachasComidas = Number(prompt("Quantas bolochas você comeu?"))
+    bolachas.push(BolachasComidas);
+    soma = soma + BolachasComidas;
+    }
+    const media = soma / bolachas.length;
+    //Saída
+    document.write(`Total de bolachas consumidas ${soma} <br/> E a media das bolachas consumidas é de ${media.toFixed(2)}`);
+</script>

@@ -1,0 +1,24 @@
+<script>
+    //Problema: Controle de suínos
+    /*
+    Desenvolva um programa que conte os 15 porquinhos que estão na fazenda. Para cada porquinho contado, pergunte se o porquinho é macho ou se o porquinho é fêmea.
+    Ao final, apresente a quantidade de machos e fêmeas que possuem na fazenda.
+    */
+
+    //Entrada
+    let machos = [];
+    let femeas = [];
+
+    //Processamento
+    for (let contador = 1 ; contador <= 15; contador++){
+    const genero = prompt(`Qual o genero do porquinho? (M-macho) (F-fêmea)`);
+    if (genero === "M"){
+    machos.push(contador);
+    }else{
+    femeas.push(contador);
+    }
+    }
+
+    //Saída
+    document.write(`Na fazenda temos ${machos.length} porquinhos machos </br> E temos ${femeas.length} porquinhos femeas`);
+</script>
